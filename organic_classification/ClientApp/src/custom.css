@@ -1,0 +1,97 @@
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+.btnaction {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.previewImage{
+    text-align:center,
+}
+.extra-btn {
+    --bs-btn-padding-y: 1.5rem!important;
+    --bs-btn-padding-x: 6rem!important;
+    margin-top: 150px; 
+}
+#upload{
+    text-align: center; 
+}
+.extra-btn2 {
+    --bs-btn-padding-y: 1rem !important;
+    --bs-btn-padding-x: 9rem !important;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Drop or clik to add image';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3) !important;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 30px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    width: 100%;
+    height: 100px;
+    border: dotted;
+    text-align: center;
+    margin-top: 10px;
+    border-color: #03C988;
+    margin-bottom: 10px;
+}
+
+.custom-file-input:hover::before {
+    border-color: black;
+}
+
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.custom-file-input {
+    width: 100%;
+}
+.previewImage {
+    text-align:center; 
+    margin-top: 20px; 
+}
+tbody{
+    text-align:left; 
+}
+.card {
+    padding: 0rem !important;
+}
+/*img{
+    margin-top:20px; 
+}*/
+
+#showresult{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.organik {
+    color: lawngreen;
+}
+.non-organik {
+    color: dodgerblue;
+}
