@@ -9,7 +9,8 @@ const context =  [
     "/weatherforecast/Getlist", 
     "/analize/importfile", 
     "/analize/send", 
-    "/analize/getfileuploaded"
+    "/analize/getfileuploaded", 
+    "/analize/requests",
 ];
 
 module.exports = function(app) {

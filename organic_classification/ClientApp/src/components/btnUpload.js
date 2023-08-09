@@ -51,7 +51,6 @@ export class btnUpload extends Component {
     }
      
     static btnAction() {
-
         return (
             <div class="col-md-12 row btnaction" >
                 <div class="col-md-12">
@@ -69,19 +68,7 @@ export class btnUpload extends Component {
         ); 
     }
     static img(img) {
-
-        return (<img src={img} class="card-img-top"  alt="..." />
-            //<div class="col-md-12 row">
-            //    <div class="col-md-6">
-            //        <img src={img} class="rounded float-center" width="400px" alt="..." />
-            //    </div>
-            //    <div class="col-md-6" id="showResult">
-                   
-            //    </div>
-            //</div>
-
-            
-        ); 
+        return (<img src={img} class="card-img-top"  alt="..." /> ); 
     }
 
 
@@ -90,7 +77,6 @@ export class btnUpload extends Component {
         const container = document.getElementById('previewImage');
         const root = ReactDOM.createRoot(container);
 
-        //if (ths == undefined) { return;  }
         var file = ths.target.files[0];
         if (ths.target.files.length === 0) {
             root.render(<h1>No file selected</h1>); 

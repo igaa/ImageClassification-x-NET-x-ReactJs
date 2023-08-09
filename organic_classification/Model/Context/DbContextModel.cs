@@ -8,6 +8,8 @@ namespace organic_classification.Model.Context
         //main
         public DbSet<Images> images { get; set; }
 
+        public DbSet<DataTraining> data_training { get; set; }
+
         //end main
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)

@@ -53,7 +53,7 @@ export class inputUpload extends Component {
             //imagedt = arrdata
             const container = document.getElementById('showresult');
             const root = ReactDOM.createRoot(container);
-            root.render("Analizing..."); 
+            root.render("Menganalisa data..."); 
 
             window.setTimeout(() => {
 
@@ -61,7 +61,7 @@ export class inputUpload extends Component {
                 axios.post('analize/send', arrdata).then(function (response) {
                     console.log(response);
 
-                    root.render("Get data..."); 
+                    root.render("Mendapatkan data..."); 
                     console.log(response.data.imageSource); 
                     var ress = resulData.getResult(response.data);
                     window.setTimeout(() => {
@@ -81,7 +81,7 @@ export class inputUpload extends Component {
                 <div id="inputsection">
                     <input type="hidden" id="FileName" name="fileName" value={this.inputRef} onChange={(e) => onChangeHandler(e.target)}></input>
                 </div>
-                <button type="submit" class="btn btn-success extra-btn2" >Analize</button>
+                <button type="submit" class="btn btn-success extra-btn2" >Analisa</button>
             </form>
                     
         )
